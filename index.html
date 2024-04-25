@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <main style="display: flex;">
+    <!-- sidebar -->
+    
+    <div class="sidebar-container" id="sidebar-container">
+      <aside style="position: fixed;">
+        <img
+          src="https://w7.pngwing.com/pngs/129/292/png-transparent-female-avatar-girl-face-woman-user-flat-classy-users-icon.png"
+          style="height: 200px; width: 200px; border-radius: 50%; border: 2px solid black;">
+        <ul>
+          <li>
+            <a href="#home-section" class="link-item"> <span class="bi bi-house"></span>  HOME</a>
+          </li>
+          <li>
+            <a href="#about-section" class="link-item"> <span class="bi bi-person"></span>  ABOUT</a>
+          </li>
+          <li>
+            <a href="#education-section" class="link-item"><span class="bi bi-book-fill"></span>  EDUCATION</a>
+          </li>
+          <li>
+            <a href="#skills-section" class="link-item"><span class="bi bi-file-earmark"></span>  SKILLS</a>
+          </li>
+          <li>
+            <a href="#hobbies-section" class="link-item"> <span class="bi bi-journal-plus"></span>  HOBBIES</a>
+          </li>
+          <li>
+            <a href="#contact-section" class="link-item"><span class="bi bi-chat-dots-fill"></span>  CONTACT</a>
+          </li>
+        </ul>
+      </aside>
+    </div>
+    
+ 
+
+    <!-- main content -->
+    <div id="main-contain" style="flex: 1;">
+      <div class="position-fixed mobile-menu-toggle" id="mobile-menu-toggle">
+        <i class="bi bi-list open-icon" id="open-sidebar-icon"></i>
+        <i class="bi bi-x-lg close-icon" id="close-sidebar-icon"></i>
+      </div>
+      <!--HOME-->
+      <section id="home-section">
+        <div class="home-section-content">
+          <h1>HELLO EVERYONE</h1>
+          <!-- todo: add typing animation -->
+          <h2><span id="persona-name"></span></h2>
+        </div>
+       
+      </section>
+
+      <!--ABOUT-->
+      <section id="about-section" class="section-bg-color">
+        <div class="about-section-content ">
+          <h1 class="text-center fs-1 text-white pb-5"><i>ABOUT ME</i></h1>
+          <p>
+          <h3><i>Hello, I'm Manisha Batesar, a first-year MCA student at <a href="https://www.starinfotechcollege.com/"
+                target="_blank">Star Infotech College</a>, Ajmer. Originally from Jayal, Nagaur, I completed my 10th
+              grade with a commendable 70%
+              from Nagaur, followed by an impressive 83% in 12th grade arts. Continuing my educational pursuit, I earned
+              my BA degree from Nagaur.my journey in the world
+              of technology began with a passion for building websites.I have a solid foundation in computer basics,
+              including HTML, CSS, C language, and
+              Bootstrap. Currently, I'm expanding my skills by delving into VB.Net and Javascript. Apart from academics,
+              I find joy in
+              exploring various hobbies such as music, reading, and traveling. With a keen interest in web development
+              and
+              a thirst for knowledge, I am dedicated to honing my skills and contributing positively to the field of
+              technology.</i></h3>
+          </p>
+        </div>
+      </section>
+
+      <!--EDUCATION-->
+      <section id="education-section">
+        <div class="education-section-content w-100">
+          <h1 class="text-center"><i>EDUCATION</i></h1>
+          <div class="p-5 overflow-auto">
+            <!-- overflow-auto= autometic scroll bar for small screen -->
+
+            <table class="table table-bordered table-responsive  table-hover ">
+              <thead>
+                <tr>
+                  <th scope="col" class="table-dark">
+                    <h2>Qualification</h2>
+                  </th>
+                  <th scope="col" class="table-dark">
+                    <h2>Name of Board</h2>
+                  </th>
+                  <th scope="col" class="table-dark">
+                    <h2>Percentage</h2>
+                  </th>
+                  <th scope="col" class="table-dark">
+                    <h2>Year</h2>
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td scope="col" class="table-success">
+                    <h2>10th</h2>
+                  </td>
+                  <td scope="col" class="table-success">
+                    <h2>RBSE</h2>
+                  </td>
+                  <td scope="col" class="table-success">
+                    <h2>70%</h2>
+                  </td>
+                  <td scope="col" class="table-success">
+                    <h2>2018</h2>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td scope="col" class="table-light">
+                    <h2>12th</h2>
+                  </td>
+                  <td scope="col" class="table-light">
+                    <h2>RBSE</h2>
+                  </td>
+                  <td scope="col" class="table-light">
+                    <h2>83%</h2>
+                  </td>
+                  <td scope="col" class="table-light">
+                    <h2>2020</h2>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="col" class="table-success">
+                    <h2>GREDUCATION(BA)</h2>
+                  </td>
+                  <td scope="col" class="table-success">
+                    <h2>MDSU</h2>
+                  </td>
+                  <td scope="col" class="table-success">
+                    <h2>70%</h2>
+                  </td>
+                  <td scope="col" class="table-success">
+                    <h2>2023</h2>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!--SKILLS-->
+      <section id="skills-section" class="section-bg-color">
+        <div class="skills-section-content p-5">
+          <h2 class="fs-1 text-center text-white">SKILLS</h2>
+          <div class="container d-flex gap-5 flex-wrap justify-content-center ">
+            <!-- card-1 -->
+            <div class="card shadow" style="width: 300px;">
+              <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_640.png" class="card-img-top pt-2"
+                alt="html">
+
+              <div class="card-body">
+                <h5 class="card-title text-center">HTML</h5>
+                <div class="progress mt-3">
+                  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 90%;">90%</div>
+                </div>
+              </div>
+            </div>
+            <!-- card-2 -->
+            <div class="card shadow" style="width: 300px;">
+              <img src="https://cdn-icons-png.flaticon.com/512/919/919826.png" class="card-img-top pt-2"
+                alt="html">
+
+              <div class="card-body">
+                <h5 class="card-title text-center">CSS</h5>
+                <div class="progress mt-3">
+                  <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 88%;">88%</div>
+                </div>
+              </div>
+            </div>
+            <!-- card-3 -->
+            <div class="card shadow" style="width: 300px;">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHxhlRUL6htbhzO_pFAYIZS4guzHX8u5d9pKedcaE8Ng&s" class="card-img-top pt-2"
+                alt="html">
+
+              <div class="card-body">
+                <h5 class="card-title text-center">Bootstrap</h5>
+                <div class="progress mt-3">
+                  <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 85%;">85%</div>
+                </div>
+              </div>
+            </div>
+            <!-- card-4 -->
+            <div class="card shadow" style="width: 300px;">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvy4NvlNXR4Ik6O8-OmelGOCTr_1F3aZiSSQkPIKCABiyCJmQSG3lsA56yUukFGmIkDM0&usqp=CAU" class="card-img-top pt-2"
+                alt="html">
+
+              <div class="card-body">
+                <h5 class="card-title text-center">C Language</h5>
+                <div class="progress mt-3">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 70%;">70%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--HOBBIES-->
+      <section id="hobbies-section">
+        <div class="hobbies-section-content">
+          <h2 class="fs-1 text-center p-5 ">HOBBIES</h2>
+          <div class="container d-flex gap-5 flex-wrap justify-content-center mt-5 mb-5">
+            <!-- card-1 -->
+            <div class="card  bg-pink" style="width: 300px;">
+              <img src="https://cdn-icons-png.flaticon.com/512/4472/4472584.png" class="card-img-top pt-2"
+                alt="html">
+
+              <div class="card-body ">
+                <h3 class="card-title text-center">MUSIC</h3>
+                <div class="card-body">
+                  <p><h5><i>"One good thing about music, when it hits you, you feel no pain". ...
+                    "Where words fail, music speaks. ...
+                    Music is a moral law. ..."</i></h5>
+                    </p>
+                  </div>
+              </div>
+            </div>
+            <!-- card-2 -->
+            <div class="card  bg-pink" style="width: 300px;">
+              <img src="https://i.pinimg.com/564x/ba/da/23/bada23ea242bacd17cd89257e2b67cca.jpg" class="card-img-top pt-2"
+                alt="html">
+
+              <div class="card-body ">
+                <h3 class="card-title text-center">READING</h3>
+                <div class="card-body">
+                  <p><h5><i>“Books serve to show a man that those original thoughts of his aren't very new after all"......"I guess there are never enough books......” </i></h5>
+                    </p>
+                  </div>
+              </div>
+            </div>
+            <!-- card-3 -->
+            <div class="card  bg-pink" style="width: 300px;">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-yiyNdK69W4NuBiTJRP-2dzdmxvn_qWlDaCDgwGg_jISVdlBPYAl-CBsseeEwlJ4txTg&usqp=CAU" class="card-img-top pt-2" 
+                alt="html">
+
+              <div class="card-body ">
+                <h3 class="card-title text-center">Traveling</h3>
+                <div class="card-body">
+                  <p><h5><i>“Life is about the adventures you take and the memories you make....... So travel often and live life with open eyes and an open heart....."</i></h5>
+                    </p>
+                  </div>
+              </div>
+            </div>
+           
+
+         </div>
+      </div>
+
+      </section>
+
+      <!--contact-->
+      <section id="contact-section" class="section-bg-color">
+        <div class="contact-section-content ">
+          <h2 class="fs-1 text-center text-white p-5 ">CONTACT</h2> 
+           
+              <div class="container bg-dark pb-5 pt-3 pe-5 ps-4 mt-4">
+                <form class="border rounded" style="background-color: #dbdbdb;" onclick="event.preventDefault()">
+                  <h2 class="bg-light p-4 text-center">Contact Me</h2>
+                  <div class="p-4">
+                    <div class="row mt-4 ">
+                      <div class="col-lg-6 col-sm-12 pb-4">
+                        <input type="text" name="unm" value="" placeholder="First Name" class="form-control" />
+                      </div>
+            
+                      <div class="col-lg-6 col-sm-12 pb-2">
+                        <input type="text" name="unm" value="" placeholder="Last Name" class="form-control" />
+                      </div>
+                    </div>
+            
+                    <div class="row mt-4">
+                      <div class="col-lg-12 col-sm-12 pb-3">
+                        <input type="email" name="email" value="" placeholder=" Email Address" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="row mt-4">
+                      <div class="col-lg-12 col-sm-12 pb-3">
+                        <input type="number" name="nm" value="" placeholder="Enter 10-digit mobile number" class="form-control" />
+                      </div>
+                    </div>
+            
+                    <div class="row mt-4">
+                      <div class="col-lg-6 col-sm-12 pb-4">
+                        <input type="password" name="pwd" value="" placeholder=" Password" class="form-control" />
+                      </div>
+            
+                      <div class="col-lg-6 col-sm-12 pb-3 pt-2">
+                        <input type="password" name="pwd" value="" placeholder=" Confirm Password" class="form-control" />
+                      </div>
+                    </div>
+            
+            
+                    <div class="row mt-3">
+                      <button type="submit"  class=" form-control" style="background-color:#3c8389;">SAVE</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <br>
+              <br>
+              <br>
+              <hr />
+              <hr />
+
+            
+        </div>
+
+      </section>
+
+
+    </div>
+  </main>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="./assets/js/index.js"></script>
+
+  
+</body>
+
+</html>

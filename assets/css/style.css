@@ -1,0 +1,234 @@
+body {
+  background-color: white;
+  overflow-x: hidden;
+}
+
+.section-bg-color {
+  background-color: #154545;
+}
+
+.sidebar-container {
+  box-sizing: border-box;
+  min-width: 300px;
+  max-width: 300px;
+  flex: 1;
+  transition: all 0.5s;
+}
+
+.sidebar-container aside {
+  box-sizing: border-box;
+  background-color: #154545;
+  width: 300px;
+  height: 100vh;
+  padding: 10px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  border-right: 2px solid rgb(243, 241, 241);
+}
+
+.sidebar-container aside ul li {
+  list-style-type: none;
+  margin-top: 40px;
+}
+
+.sidebar-container aside ul li a {
+  font-size: 30px;
+  text-decoration: none;
+  color: black;
+  /* transition: transform 0.2s; */
+}
+
+.sidebar-container aside ul li a:hover {
+  /* transform: scale(1.5); */
+  color: rgb(24, 24, 77);
+}
+
+
+/* main content */
+
+#main-contain {
+  width: calc(100vw - 300px);
+}
+
+#home-section {
+  background-image: url("../images/first\ img.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  height: 100vh;
+  color: white;
+}
+
+
+.home-section-content {
+  position: relative;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+  width: 100%;
+
+}
+
+.home-section-content h1 {
+  font-size: calc(5vw + 25px);
+}
+
+.home-section-content h2 {
+  font-size: calc(2vw + 20px);
+}
+
+/* about */
+#about-section {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.about-section-content h1 {
+  margin-top: 30px;
+}
+
+.about-section-content h3 {
+  color: black;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  border: 2px solid black;
+  padding: 20px;
+  background-color: #bccfd3;
+}
+
+#education-section {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+}
+
+/* skills */
+
+
+#skills-section .card {
+  border: 3px solid rgb(118, 170, 205);
+  border-radius: 15px;
+  min-width: 250px;
+  width: 25%;
+  max-width: 280px;
+  margin-top: 120px;
+}
+
+#skills-section .card img {
+  width: 148px;
+  height: 148px;
+  border-radius: 100%;
+  margin: auto;
+}
+
+#skills-section .card:hover {
+  box-shadow: 3px 3px 20px rgb(107, 156, 189) !important;
+}
+
+#skill-section .progress {
+  height: 30px;
+}
+
+#skills-section {
+  min-height: 80vh;
+}
+
+#hobbies-section .card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+#hobbies-section .card {
+  background-color: rgb(176, 209, 227);
+  border-radius: 50px;
+}
+
+#hobbies-section .card:hover {
+  box-shadow: 0px 0px 10px rgb(42, 82, 104) !important;
+}
+
+/* mobile menu styles */
+.mobile-menu-toggle {
+  font-size: 40px;
+  right: 20px;
+  top: 20px;
+  z-index: 900;
+  display: none;
+}
+
+.mobile-menu-toggle i {
+  cursor: pointer;
+  background-color: rgb(176, 209, 227);
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.093);
+  border-radius: 50%;
+  padding: 10px;
+  display: none;
+}
+
+/* if mobile sidebar is open hide open-icon */
+.mobile-menu-toggle .open-icon {
+  display: block;
+}
+
+@media screen and (max-width: 1000px) {
+  .sidebar-container {
+    margin-left: -300px;
+    position: absolute;
+    z-index: 100;
+  }
+
+  .sidebar-container.active {
+    margin-left: 0px;
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+  }
+
+  /* if mobile sidebar is open hide open-icon */
+  .mobile-menu-toggle.active .open-icon {
+    display: none;
+  }
+
+  /* if mobile sidebar is open then show close-icon */
+  .mobile-menu-toggle.active .close-icon {
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+
+/* scrollbar style */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #154545;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0e2525;
+}
