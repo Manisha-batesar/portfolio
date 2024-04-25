@@ -52,13 +52,13 @@ body {
 }
 
 #home-section {
-  background-image: url("../images/first\ img.webp");
+  background-image: url("https://assets.entrepreneur.com/content/3x2/2000/20150730195333-girl-blogging-woman-blogger.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
   height: 100vh;
-  color: white;
+  color: whitesmoke;
 }
 
 

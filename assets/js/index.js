@@ -23,7 +23,7 @@ for (let index = 0; index < linksItems.length; index++) {
 
 // typed js - typing animation
 var typed = new Typed('#persona-name', {
-  strings: ["I'M MANISHA <span style='color: red;'>BATESAR<span>"],
+  strings: ["I'M MANISHA <span style='color: #b0d1e3;'>BATESAR<span>"],
   typeSpeed: 120,
   backSpeed: 120,
   loop: true,
