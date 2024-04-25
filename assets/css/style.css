@@ -43,6 +43,17 @@ body {
   /* transform: scale(1.5); */
   color: rgb(24, 24, 77);
 }
+.social-links {
+  min-height: 50px;
+}
+.social-links a {
+  color: #b0d1e3;
+  transition: all 0.3s;
+}
+.social-links a:hover {
+  color: #95b7c9;
+  transform: scale(1.1);
+}
 
 
 /* main content */
